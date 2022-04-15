@@ -6,7 +6,7 @@
 import requests # For DLing HTML
 from bs4 import BeautifulSoup as bs # To work with HTML
  
-# website URL to scrape
+# website URLs to scrape
 URL = 'https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page'
 FILETYPE = '.csv'
 
