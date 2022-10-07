@@ -15,7 +15,7 @@ os.environ["PYSPARK_PYTHON"] = sys.executable
 os.environ["PYSPARK_DRIVER_PYTHON"] = sys.executable
 
 
-directory = 'C:/Users/Robert.Jones/OneDrive - Central Coast Energy Services, Inc/Desktop/Springboard/Capstone/data_pipeline/nyc_data/trip_data/' ### <--- enter directory for green taxi trip data
+directory = 'C:/Users/Robert.Jones/OneDrive - Central Coast Energy Services, Inc/Desktop/Springboard/Capstone/data_pipeline/nyc_data/trip_data/' 
 
 
 spark = SparkSession.builder.getOrCreate()
