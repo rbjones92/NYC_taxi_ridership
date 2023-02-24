@@ -242,10 +242,10 @@ class Taxi_DFs:
         fh_df = Taxi_DFs.make_fhv()
         hv_df = Taxi_DFs.make_hv()
 
-        hv_df.coalesce(1).write.parquet('combined_hv.parquet')
-        fh_df.coalesce(1).write.parquet('combined_fh.parquet')
-        green_df.coalesce(1).write.parquet('combined_green.parquet')
-        yellow_df.coalesce(1).write.parquet('combined_yellow.parquet')
+        hv_df.write.parquet('combined_hv.parquet')
+        fh_df.write.parquet('combined_fh.parquet')
+        green_df.write.parquet('combined_green.parquet')
+        yellow_df.write.parquet('combined_yellow.parquet')
 
     def combine_all_dfs(self):
 
@@ -262,6 +262,6 @@ class Taxi_DFs:
         print('added high volume')
 
         # Combine and write
-        df.coalesce(1).write.parquet('combined_df.parquet')
+        df.write.parquet('combined_df.parquet')
 
 
