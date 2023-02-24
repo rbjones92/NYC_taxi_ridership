@@ -5,13 +5,8 @@
 import datetime
 from bs4 import BeautifulSoup as BS
 from selenium import webdriver
-from functools import reduce
 import pandas as pd
 import time
-import numpy as np
-import os
-
-os.chdir('C:\\Users\\Bob\\Desktop\\SpringBoard\\Python_Projects\\NYC_Taxi_Capstone\\Wunderground_Data')
 
 # Function to find ranges of dates
 def get_dates():
@@ -29,7 +24,8 @@ def get_dates():
 
 # function to load wunderground data (without this it has no records to show)
 def render_page(url):
-    driver = webdriver.Chrome(executable_path=r'C:\Users\Bob\Downloads\chromedriver\chromedriver.exe')
+    executable_path = '' # Enter Executable path
+    driver = webdriver.Chrome()
     driver.get(url)
     time.sleep(3)
     r = driver.page_source
@@ -39,8 +35,6 @@ def render_page(url):
 
 # function to scrape wunderground
 def scraper(page, dates):
-
-
 
     for d in dates:
 
@@ -53,7 +47,6 @@ def scraper(page, dates):
         check = container.find('tbody')
 
         data = []
-
         try:
             for c in check.find_all('tr', class_='ng-star-inserted'):
                 for i in c.find_all('td', class_='ng-star-inserted'):
@@ -61,16 +54,14 @@ def scraper(page, dates):
                     trial = trial.strip('  ')
                     data.append(trial)
             
-
             df_daily = []
-
             for i in range(0,len(data),10):
                 df = pd.DataFrame(data[i:i+10],columns=[d],index=['Time','Temperature','Dew_Point','Humidity','Wind','Wind_Speed','Wind_Gust','Pressure','Precipitation','Condition'])
                 df_daily.append(df)
 
             df_daily = pd.concat(df_daily)
-
             df_daily.to_parquet(f'NY_Weather{d}.parquet')
+            
         except AttributeError:
             continue
 

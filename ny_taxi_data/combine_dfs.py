@@ -169,7 +169,6 @@ def make_fhv():
 
     return fhv_df
 
-
 def combine_dfs():
 
     df_yellow = make_yellow()
