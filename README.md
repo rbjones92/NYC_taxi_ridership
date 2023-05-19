@@ -1,0 +1,25 @@
+## Guided Capstone - New York City Taxi Ridership
+
+## Summary
+ETL data pipeline scraping both New York City taxi ridership data as well as weather data from wunderground.
+
+## Description
+Taxi Data - Scrape yellow taxi data from https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+...load to Azure Blob Storage
+Weather Data - Scrape wunderground data from https://www.wunderground.com/history/daily/us/ny/new-york-city
+...transform to remove special characters from records and rename columns for units of measurement
+
+## Technologies
+- Python 3.10.7
+- Azure Databricks
+- Azure Blob Storage
+- Spark
+
+## End Result DataFrames
+Taxi Dataframe
+
+![Alt Text](screenshots/taxi_data.JPG?raw=true "taxi dataframe")
+
+Weather Dataframe
+
+![Alt Text](screenshots/weather_data.JPG?raw=true "weather dataframe")
