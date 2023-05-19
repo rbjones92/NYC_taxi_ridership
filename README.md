@@ -18,8 +18,8 @@ Weather Data - Scrape wunderground data from https://www.wunderground.com/histor
 ## End Result DataFrames
 Taxi Dataframe
 
-![Alt Text](screenshots/taxi_data.JPG?raw=true "taxi dataframe")
+![Alt Text](taxi_data.JPG?raw=true "taxi dataframe")
 
 Weather Dataframe
 
-![Alt Text](screenshots/weather_data.JPG?raw=true "weather dataframe")
+![Alt Text](weather_data.JPG?raw=true "weather dataframe")
