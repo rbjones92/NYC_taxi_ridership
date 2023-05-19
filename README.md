@@ -5,8 +5,11 @@ ETL data pipeline scraping both New York City taxi ridership data as well as wea
 
 ## Description
 Taxi Data - Scrape yellow taxi data from https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+<br>
 ...load to Azure Blob Storage
+<br>
 Weather Data - Scrape wunderground data from https://www.wunderground.com/history/daily/us/ny/new-york-city
+<br>
 ...transform to remove special characters from records and rename columns for units of measurement
 
 ## Technologies
