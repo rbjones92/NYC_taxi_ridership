@@ -21,8 +21,8 @@ ETL data pipeline scraping both New York City taxi ridership data as well as wea
 ## End Result DataFrames
 Taxi Dataframe
 
-![Alt Text](taxi_data.JPG?raw=true "taxi dataframe")
+![Alt Text](screenshots/taxi_data.JPG?raw=true "taxi dataframe")
 
 Weather Dataframe
 
-![Alt Text](weather_data.JPG?raw=true "weather dataframe")
+![Alt Text](screenshots/weather_data.JPG?raw=true "weather dataframe")
