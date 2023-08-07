@@ -1,0 +1,17 @@
+Terminal Outputs:
+
+unit_tests_weather.py
+
+DevTools listening on ws://127.0.0.1:50610/devtools/browser/fbc13f57-03cf-4fab-a427-fcfc760f04a0
+...INFO()...
+----------------------------------------------------------------------
+Ran 3 tests in 0.005s
+
+OK
+
+unit_tests_taxi.py
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.010s
+
+OK
